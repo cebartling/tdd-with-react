@@ -16,14 +16,13 @@ module.exports = function(config) {
         autoWatchBatchDelay: 300,
 
         files: [
-            './app/bundle.js',
-            './node_modules/angular-mocks/angular-mocks.js',
-            './tests/**/*.js'
+            './src/index.js',
+            './src/**/*.spec.js'
         ],
 
         preprocessors: {
-            './app/bundle.js': ['webpack'],
-            './tests/**/*.spec.js': ['babel']
+            './src/index.js': ['webpack'],
+            './src/**/*.spec.js': ['babel']
         },
 
         webpack: webpackConfig,
